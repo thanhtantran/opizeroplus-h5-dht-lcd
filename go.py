@@ -2,7 +2,7 @@ from pyA20.gpio import gpio
 from pyA20.gpio import port
 
 #import RPi.GPIO as GPIO
-import dht22
+import dht11
 import time
 import datetime
 
@@ -15,7 +15,7 @@ gpio.init()
 
 
 # read data using pin 14
-instance = dht22.DHT22(pin=PIN2)
+instance = dht11.DHT11(pin=PIN2)
 
 while True:
     result = instance.read()

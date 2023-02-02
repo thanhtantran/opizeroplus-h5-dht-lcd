@@ -43,8 +43,8 @@ class DHT11:
 
         # change to input using pull up
         # gpio.setcfg(self.__pin, gpio.INPUT, gpio.PULLUP)
-	gpio.setcfg(self.__pin, gpio.INPUT)
-	gpio.pullup(self.__pin, gpio.PULLUP)
+        gpio.setcfg(self.__pin, gpio.INPUT)
+        gpio.pullup(self.__pin, gpio.PULLUP)
 
 
         # collect data into an array
